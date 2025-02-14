@@ -1,112 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background: #f8f9fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-.container {
-    width: 100%;
-    max-width: 800px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
-.form-container {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.form-container input,
-.form-container select,
-.form-container button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.form-container button {
-    background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.filters {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
-.filters select,
-.filters input,
-.filters button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.filters button {
-    background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#expenseList {
-    margin-top: 15px;
-    list-style: none;
-    padding: 0;
-}
-
-#expenseList li {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-    background: #f9f9f9;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    border-left: 4px solid #007bff;
-}
-
-#expenseList li button {
-    background: #dc3545;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .form-container,
-    .filters {
-        flex-direction: column;
-    }
-} */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 * {
@@ -142,7 +34,7 @@ h1 {
     color: #007bff;
 }
 
-/* Form and Filters Layout */
+
 .form-container, .filters {
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +61,6 @@ input:focus, select:focus {
     outline: none;
 }
 
-/* Add Expense Button */
 .form-container button {
     background: #007bff;
     color: white;
@@ -209,14 +100,11 @@ input:focus, select:focus {
 
 #expenseList li button {
     background: #dc3545;
-    /* padding: 8px 12px;
-    border-radius: 6px;
-    font-size: 0.9rem; */
+    
+ 
 }
 
-/* #expenseList li button:hover {
-    background: #c82333;
-} */
+
 
 @media (max-width: 768px) {
     .form-container, .filters {
@@ -224,15 +112,15 @@ input:focus, select:focus {
     }
 }
 #totalExpensesBtn {
-    background: #cbdc35;  /* Light green background */
-    color: black;         /* Text color */
-    padding: 10px 20px;   /* Padding to make it larger */
-    border-radius: 6px;   /* Rounded corners */
-    font-size: 1rem;      /* Readable font size */
-    font-weight: bold;    /* Bold text */
-    border: none;         /* Remove default border */
-    cursor: pointer;      /* Pointer cursor for button effect */
-    display: inline-block; /* Ensure proper button display */
+    background: #cbdc35; 
+    color: black;          
+    padding: 10px 20px;    
+    border-radius: 6px;    
+    font-size: 1rem;       
+    font-weight: bold;     
+    border: none;         
+    cursor: pointer;       
+    display: inline-block; 
     text-align: center;
     transition: background 0.3s ease-in-out;
 }
