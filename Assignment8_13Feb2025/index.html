@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <!-- Expense Form -->
+        <div class="form-container">
+            <input type="number" id="amount" placeholder="Amount">
+            <select id="category">
+                <option value="0">Food</option>
+                <option value="1">Travels</option>
+                <option value="2">Bills</option>
+                <option value="3">Shopping</option>
+                <option value="4">Others</option>
+            </select>
+            <input type="date" id="date">
+            <input type="text" id="description" placeholder="Description">
+            <button id="addExpenseBtn">Add Expense</button>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <select id="filterCategory">
+                <option value="">Filter by Category</option>
+                <option value="0">Food</option>
+                <option value="1">Travels</option>
+                <option value="2">Bills</option>
+                <option value="3">Shopping</option>
+                <option value="4">Others</option>
+            </select>
+
+            <input type="date" id="startDate">
+            <input type="date" id="endDate">
+            <button id="filterDateBtn">Filter by Date</button>
+        </div>
+
+        <!-- Expense List -->
+        <ul id="expenseList"></ul>
+
+
+        <button id="totalExpensesBtn">Total Expenses Without Filter</button>
+       <p id="totalExpensesDisplay"></p>
+
+    </div>
+
+    <script src="Expances.js"></script>
+</body>
+</html>
