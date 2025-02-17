@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store eCommerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fake Store</h1>
+        <input type="text" id="search-bar" placeholder="Search for products...">
+        <select id="category-filter">
+            <option value="">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="jewelery">Jewelery</option>
+            <option value="men's clothing">Men's Clothing</option>
+            <option value="women's clothing">Women's Clothing</option>
+        </select>
+        <a href="cart.html" target="_blank" id="cart-link">🛒 Cart</a>
+    </header>
+
+    <main>
+        <div id="products-container"></div>
+    </main>
+
+    <script src="home.js"></script>
+    <script src="search.js"></script>
+    <script src="category.js"></script>
+    <script src="cart.js"></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
