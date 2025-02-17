@@ -11,7 +11,7 @@ interface Product {
 const productsContainer = document.getElementById('products-container')!;
 let products: Product[] = [];
 
-// Fetch products from API using fetch
+ 
 async function fetchProducts(): Promise<Product[]> {
     try {
         const response = await fetch('https://fakestoreapi.com/products');
@@ -27,9 +27,9 @@ async function fetchProducts(): Promise<Product[]> {
     }
 }
 
-// Display product cards
+ 
 function displayProductCards(products: Product[]): void {
-    productsContainer.innerHTML = ''; // Clear previous products
+    productsContainer.innerHTML = ''; 
     if (products.length === 0) {
         productsContainer.innerHTML = '<p>No products available.</p>';
     }
